@@ -66,6 +66,7 @@ def run(data_dir,
       model_export_format=ModelExportFormat.TFLITE,
       model_spec=spec,
       validation_data=validation_data,
+      use_augmentation=True,
       **kwargs)
 
   _, acc = model.evaluate(test_data)
